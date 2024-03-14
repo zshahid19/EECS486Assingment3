@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run and Notify with Time",
+        "type": "shell",
+        "command": "echo 'Start time: $(date)' > time_log.txt && python3 crawler.py myseedURLS.txt 3 && echo 'End time: $(date)' >> time_log.txt && notepad.exe time_log.txt",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
